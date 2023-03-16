@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- <div class="img">
+    <img src="./gaurav.jpg" alt="" srcset="">
+</div> -->
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#" > My Profile </a>
+            </div>
+            
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="service">Serivce</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+            <div class="dropdown_menu">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="service">Serivce</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="#" class="action_btn">Get started</a></li>
+            </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <!-- <script src="navbar.js"></script> -->
+    <div>
+        
+        <div class="describe">
+            <img src="gaurav.jpg" alt="your image" class="rounded-image">
+                <h3 class="neonText">Gaurab Kumar Magar</h3>
+                <p>Hello, Everyone<br> 
+                <br>  
+                 I'm Gaurab Kumar Magar<br>
+                 I've been training at the Deerwalk Training Center for one year.<br>
+                 I have done courses in Python data science, MERN full-stack,<br>
+                 QA (Quality Assurance), DevOps, and I have a basic <br>
+                 understanding of digital marketing. <br>
+                 and I'm interested in developing websites.
+                </p>
+            
+        </div>
+    </div>
+    <div class="foot">
+        <footer class="style">
+            terms and condition &copy; all right reserved Contact US
+        </footer>
+    </div>
+</body>
+</html>
